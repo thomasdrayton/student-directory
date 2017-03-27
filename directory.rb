@@ -23,8 +23,13 @@ def print_header
 end
 
 def print(students)
+  puts "Print names which begin with which letter\?"
+  letter = gets.chomp
   students.each do |student|
-    puts "#{student[:name]} (#{student[:cohort]} cohort)"
+    if student[:name].to_s[0] == letter
+      puts " #{student[:name]} (#{student[:cohort]} cohort)"
+    else return 0
+    end
   end
 end
 
