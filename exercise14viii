@@ -1,0 +1,11 @@
+#ruby program thats reads and executes source code
+# $0 is the name of current file
+
+=begin
+We want to:
+1/ open the current file
+2/ read it
+3/ execute
+=end
+
+puts File.read($0)
